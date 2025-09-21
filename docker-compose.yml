@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app-amor:
+    image: app-amor-1
+    build: .
+    ports:
+      - "3002:3002"  # Cambié el puerto 3000 a 3002 en el host
+    networks:
+      - red-external-network
+    restart: always
+
+networks:
+  red-external-network:
+    external: true
