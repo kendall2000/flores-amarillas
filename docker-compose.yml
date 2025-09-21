@@ -3,7 +3,7 @@ services:
     image: app-amor-abigail
     build: .
     ports:
-      - "3003:3003"  # Cambié el puerto 3000 a 3002 en el host
+      - "3003:80"  # Cambié el puerto 3000 a 3002 en el host
     networks:
       - red-external-network
     restart: always
