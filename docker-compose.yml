@@ -1,8 +1,8 @@
 version: '3.8'
 
 services:
-  app-amor2:
-    image: app-amor-2
+  app-amor-abigail:
+    image: app-amor-abigail
     build: .
     ports:
       - "3003:3003"  # Cambié el puerto 3000 a 3002 en el host
